@@ -33,8 +33,6 @@ jobs:
       - image: node:8.10.0
     steps:
       - checkout
-      - attach_workspace:
-          at: docs/_build
       - run:
           name: Install and configure dependencies
           command: |
@@ -43,7 +41,7 @@ jobs:
             git config user.name "ci-build"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dist docs/_build/html
+          command: gh-pages --dist _site
 workflows:
   version: 2
   test-deploy:
