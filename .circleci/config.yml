@@ -24,15 +24,6 @@
       - run:
           name: Jekyll build
           command: bundle exec jekyll build
-      - run:
-          name: HTMLProofer tests
-          command: |
-            gem install html-proofer
-            bundle exec htmlproofer ./_site \
-              --allow-hash-href \
-              --check-favicon  \
-              --check-html \
-              --disable-external
       - persist_to_workspace:
           root: ./
           paths:
