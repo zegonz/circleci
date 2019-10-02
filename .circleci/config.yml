@@ -27,6 +27,7 @@
       - run:
           name: HTMLProofer tests
           command: |
+            gem install html-proofer
             bundle exec htmlproofer ./_site \
               --allow-hash-href \
               --check-favicon  \
