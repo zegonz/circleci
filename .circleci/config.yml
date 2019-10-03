@@ -31,7 +31,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: /doc-build/_site
+          at: doc-build/_site
       - run:
           name: Install and configure dependencies
           command: |
@@ -43,7 +43,7 @@ jobs:
             - "e2:ee:7f:20:7a:58:89:c1:80:7f:b0:b1:24:58:96:79"
       - run:
           name: Deploy docs to gh-pages branch
-          command: gh-pages --dist _site
+          command: gh-pages --dist doc-build/_site
 workflows:
   version: 2
   test-deploy:
