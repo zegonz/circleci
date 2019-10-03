@@ -1,6 +1,6 @@
 defaults: &defaults
+  working_directory: ~/doc-build
 version: 2
-working_directory: ~/doc-build
 jobs:
   build:
     <<: *defaults
