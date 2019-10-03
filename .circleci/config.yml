@@ -43,10 +43,8 @@ jobs:
             - "e2:ee:7f:20:7a:58:89:c1:80:7f:b0:b1:24:58:96:79"
       - run:
           name: Deploy docs to gh-pages branch
-          command: |
-            git add doc-build/_site && git commit -m "Update doc file"
-            git pull origin gh-pages
-            git subtree push --prefix doc-build/_site origin gh-pages
+          command:
+            gh-pages --dist doc-build/_site
 workflows:
   version: 2
   test-deploy:
