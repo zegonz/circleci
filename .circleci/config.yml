@@ -44,7 +44,7 @@ jobs:
       - run:
           name: Deploy docs to gh-pages branch
           command:
-            gh-pages --dist doc-build/_site
+            gh-pages --dist doc-build/_site --dest ./
 workflows:
   version: 2
   test-deploy:
