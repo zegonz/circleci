@@ -30,8 +30,6 @@ jobs:
       - image: node:8.10.0
     steps:
       - checkout
-      - attach_workspace:
-          at: doc-build/_site
       - run:
           name: Install and configure dependencies
           command: |
