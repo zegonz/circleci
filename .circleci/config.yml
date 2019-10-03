@@ -30,6 +30,8 @@ jobs:
       - image: node:8.10.0
     steps:
       - checkout
+      - attach_workspace:
+          at: ./doc-build/_site
       - run:
           name: Install and configure dependencies
           command: |
@@ -42,8 +44,7 @@ jobs:
       - run:
           name: Deploy docs to gh-pages branch
           command: |
-            ls doc-build
-            gh-pages --dist doc-build
+            gh-pages --dist doc-build/_site --dest .
 workflows:
   version: 2
   test-deploy:
