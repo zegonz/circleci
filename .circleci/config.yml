@@ -5,10 +5,6 @@ jobs:
       - image: circleci/ruby:2.5
     steps:
       - checkout
-      - restore_cache:
-          keys:
-            - rubygems-v1-{{ checksum "Gemfile.lock" }}
-            - rubygems-v1-fallback
       - run:
           name: install dependencies
           command: |
@@ -20,13 +16,11 @@ jobs:
           command: |
             cd doc-build
             bundle check || bundle install
-      - save_cache:
-          key: rubygems-v1-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
       - run:
           name: Jekyll build
-          command: bundle exec jekyll build
+          command: |
+            cd doc-build
+            bundle exec jekyll build
       - persist_to_workspace:
           root: ./
           paths:
