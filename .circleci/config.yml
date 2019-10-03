@@ -31,7 +31,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: ./doc-build/_site
+          at: ./doc-build/
       - run:
           name: Install and configure dependencies
           command: |
