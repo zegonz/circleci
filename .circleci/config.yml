@@ -45,7 +45,7 @@ jobs:
           name: Deploy docs to gh-pages branch
           command: |
             git add doc-build/_site && git commit -m "Update doc file"
-            git subtree push --force --prefix doc-build/_site origin gh-pages
+            git subtree push --prefix doc-build/_site origin gh-pages
 workflows:
   version: 2
   test-deploy:
