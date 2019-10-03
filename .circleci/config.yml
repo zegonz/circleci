@@ -25,7 +25,7 @@ jobs:
           name: Jekyll build
           command: bundle exec jekyll build
       - persist_to_workspace:
-          root: ./
+          root: ./doc-build/
           paths:
             - _site
   deploy:
@@ -34,7 +34,7 @@ jobs:
     steps:
       - checkout
       - attach_workspace:
-          at: _site
+          at: ./doc-build/_site
       - run:
           name: Install and configure dependencies
           command: |
