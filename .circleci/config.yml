@@ -33,8 +33,6 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            ls
-            pwd
             npm install -g --silent gh-pages@2.0.1
             git config user.email "pierre.gonzalez@toucantoco.com"
             git config user.name "zegonz"
@@ -45,7 +43,7 @@ jobs:
           name: Deploy docs to gh-pages branch
           command: |
             ls doc-build
-            gh-pages --dist doc-build/_site --dest ./
+            gh-pages --dist doc-build
 workflows:
   version: 2
   test-deploy:
