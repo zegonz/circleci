@@ -22,7 +22,7 @@ jobs:
             cd doc-build
             bundle exec jekyll build
       - persist_to_workspace:
-          root: ./
+          root: ./doc-build
           paths:
             - _site
   deploy:
