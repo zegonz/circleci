@@ -3,6 +3,8 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.5
+    environment:
+      BUNDLE_PATH: ~/doc-build
     steps:
       - checkout
       - restore_cache:
