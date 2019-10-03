@@ -1,7 +1,6 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/doc-build
     docker:
       - image: circleci/ruby:2.5
     steps:
@@ -11,18 +10,22 @@ jobs:
             - rubygems-v1-{{ checksum "Gemfile.lock" }}
             - rubygems-v1-fallback
       - run:
+          working_directory: ~/doc-build
           name: install dependencies
           command: |
             gem update --system
             gem install bundler
       - run:
+          working_directory: ~/doc-build
           name: Bundle Install
           command: bundle check || bundle install
       - save_cache:
+          working_directory: ~/doc-build
           key: rubygems-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
       - run:
+          working_directory: ~/doc-build
           name: Jekyll build
           command: bundle exec jekyll build
       - persist_to_workspace:
