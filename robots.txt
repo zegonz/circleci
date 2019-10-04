@@ -1,1 +1,1 @@
-Sitemap: http://zegonz.github.io/circleci/sitemap.xml
+Sitemap: http://zegonz.github.io/circleci/circleci/sitemap.xml
