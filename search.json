@@ -5,7 +5,7 @@
     
     {
       "title": "Steps",
-      "url": "/circleci/docs/steps/"
+      "url": "/docs/steps/"
 
     },
   
@@ -13,7 +13,7 @@
     
     {
       "title": "Stepforms",
-      "url": "/circleci/docs/stepforms/"
+      "url": "/docs/stepforms/"
 
     },
   
@@ -21,7 +21,7 @@
     
     {
       "title": "Known limitations",
-      "url": "/circleci/docs/known_limitations/"
+      "url": "/docs/known_limitations/"
 
     },
   
@@ -29,7 +29,7 @@
     
     {
       "title": "Translators",
-      "url": "/circleci/docs/translators/"
+      "url": "/docs/translators/"
 
     },
   
@@ -37,7 +37,7 @@
     
     {
       "title": "Themes",
-      "url": "/circleci/docs/themes/"
+      "url": "/docs/themes/"
 
     },
   
@@ -45,7 +45,7 @@
     
     {
       "title": "Customization",
-      "url": "/circleci/docs/customization/"
+      "url": "/docs/customization/"
 
     },
   
@@ -55,7 +55,7 @@
     
     {
       "title": "Markdown Cheatsheet",
-      "url": "/circleci/docs/cheatsheet/"
+      "url": "/docs/cheatsheet/"
 
     },
   
@@ -63,7 +63,7 @@
     
     {
       "title": "Font Awesome Icon List",
-      "url": "/circleci/docs/font-awesome/"
+      "url": "/docs/font-awesome/"
 
     },
   
@@ -71,7 +71,7 @@
     
     {
       "title": "Bootstrap Features",
-      "url": "/circleci/docs/bootstrap/"
+      "url": "/docs/bootstrap/"
 
     },
   
@@ -80,12 +80,12 @@
   
   {
   "title": "VQB Version 1 release !",
-  "url": "/circleci/blog/2019/10/02/v1-VQB/"
+  "url": "/blog/2019/10/02/v1-VQB/"
   },
   
   {
   "title": "First news about VQB",
-  "url": "/circleci/blog/2019/10/02/test-first-article/"
+  "url": "/blog/2019/10/02/test-first-article/"
   }
   
 ]
