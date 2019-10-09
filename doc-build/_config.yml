@@ -2,14 +2,17 @@
 title: Vue Query Builder
 email: your-email@domain.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  Doc VQB
 lang: en-US
 
+# en prod :
+#baseurl: "/circleci" # the subpath of your site, e.g. /blog/
+
+#local:
 baseurl: "/circleci" # the subpath of your site, e.g. /blog/
 url: "http://zegonz.github.io/circleci" # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+git_address: https://github.com/ToucanToco/vue-query-builder
+git_edit_address: https://github.com/ToucanToco/vue-query-builder/tree/gh-pages/
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
